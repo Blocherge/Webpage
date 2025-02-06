@@ -3,135 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+    <title>GEB resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Ensure the page takes full height */
-        html, body {
-            height: 100%;
-            margin: 0;
-        }
-
-        header {
-            background-color: #1B2CC1;
-            padding: 0;
-            width: 100%;
-            height: 60px; /* Set height for the header */
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 100%;
-            padding: 0 20px;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
+        body {
+            background-color: #063159;
             color: white;
-            text-decoration: none;
-            font-size: 18px;
         }
 
-        .icon {
+        .navbar {
+            background-color: #212529;
+        }
+
+        .navbar-brand img {
+            width: 30px;
+        }
+
+        .content-container {
+            margin-top: 20px;
+            background-color: #001f3f;
+            padding: 20px;
+            border-radius: 10px;
             color: white;
-            font-size: 20px;
         }
 
-        main {
-            background-color: #FF8966;
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #063159;
+            margin-top: 20px;
+        }
+
+            .footer img {
+                width: 30px;
+                height: auto;
+                margin: 5px;
+            }
+        .resume-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: calc(100% - 60px); /* Subtract header height */
-            padding: 20px;
-        }
-
-        .resume {
-            display: flex;
             flex-direction: column;
-            align-items: center;
-            width: 90%; /* Adjust width for better fit */
-            max-width: 900px; /* Prevents the resume from becoming too wide */
+            padding: 50px 0;
             text-align: center;
         }
 
-        .resume h2 {
-            margin-bottom: 10px;
-        }
-
-        .resume iframe {
-            width: 100%;
-            height: 700px; /* Increase height for better visibility */
-            border: none;
-        }
-
-        .download-btn {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 15px;
-            background-color: #1B2CC1;
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-            border-radius: 5px;
-        }
-
-        .download-btn:hover {
-            background-color: #0f1d8a;
-        }
-
-        footer {
-            background-color: #97EAD2;
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        footer a {
-            text-decoration: none;
-            color: teal;
-        }
+            .resume-container img {
+                width: 100%;
+                max-width: 1700px;
+                height: auto;
+            }
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-            <div class="icon"><i class="fas fa-file-alt"></i></div>
-        </nav>
-    </header>
-    
-    <main>
-        <section class="resume">
-            <h2>My Resume</h2>
-            <iframe src="../resources/img/Graham_Blocher_Resume.pdf"></iframe>
-            <a href="../resources/img/Graham_Blocher_Resume.pdf" download="Graham_Blocher_Resume.pdf" class="download-btn">
-                Download Resume
-            </a>
-        </section>
-    </main>
-    
-    <footer>
-        <p>Connect with me:</p>
-        <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/Blocherge" target="_blank">GitHub</a> |
-        <a href="https://instagram/blocherge" target="_blank">Instagram</a>
-    </footer>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="../resources/img/Profile image.jpg" alt="Batman Logo"></a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="resume-container">
+        <h2>My Resume</h2>
+        <img src="../resources/img/Graham_Blocher_Resume-1.png" alt="Resume Image">
+        <a href="../resources/img/Graham_Blocher_Resume.pdf" download="Graham_Blocher_Resume.pdf" class="btn btn-light mt-3">Download Resume</a>
+    </div>
+    <div class="footer">
+        <a href="https://www.instagram.com/blocherge?igsh=MWRzNTU3aWV5dDE5Yw%3D%3D&utm_source=qr"><img src="../resources/img/instagram_icon.png" alt="Instagram"></a>
+        <a href="https://www.github.com/Blocherge"><img src="../resources/img/2021_Facebook_icon.svg.png" alt="Facebook"></a>
+        <a href="https://www.linkedin.com/in/graham-blocher-24951a1a4"><img src="../resources/img/github_icon.png" alt="GitHub"></a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+

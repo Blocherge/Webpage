@@ -3,162 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hobbies</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>GEB hobbies</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
     <style>
-        /* Ensure the page takes full height */
-        html, body {
-            height: 100%;
-            margin: 0;
-        }
-
-        header {
-            background-color: #1B2CC1;
-            padding: 0;
-            width: 100%;
-            height: 60px; /* Set height for the header */
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 100%;
-            padding: 0 20px;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
+        body {
+            background-color: #063159;
             color: white;
-            text-decoration: none;
-            font-size: 18px;
         }
 
-        .icon {
-            color: white;
-            font-size: 20px;
+        .navbar {
+            background-color: #212529;
         }
 
-        main {
-            background-color: #FF8966;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: calc(100% - 60px); /* Subtract header height */
+        .navbar-brand img {
+            width: 30px;
+        }
+
+        .content-container {
+            margin-top: 20px;
+            background-color: #001f3f;
             padding: 20px;
+            border-radius: 10px;
+            color: white;
         }
 
-        .about {
-            display: flex;
-            align-items: center;  /* Vertically center the text with the image */
-            gap: 20px;  /* Add space between the image and text */
-            text-align: left;
-        }
-
-        .profile-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-        }
-
-        .description h2 {
-            margin: 0;
-            font-size: 24px;
-        }
-
-        .description p {
-            font-size: 16px;
-            line-height: 1.6;
-        }
-
-        .resume-link {
-            text-decoration: none;
-            color: teal;
-            font-weight: bold;
-        }
-
-        footer {
-            background-color: #97EAD2;
+        .footer {
             text-align: center;
-            margin-top: 40px;
+            padding: 10px;
+            background-color: #063159;
+            margin-top: 20px;
         }
 
-        footer a {
-            text-decoration: none;
-            color: teal;
+            .footer img {
+                width: 30px;
+                height: auto;
+                margin: 5px;
+            }
+
+        .card {
+            background-color: #001f3f;
+            color: white; 
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
+            .card img {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-            <div class="icon"><i class="fas fa-file-alt"></i></div>
-        </nav>
-    </header>
-
-    <main style="width: 100%; background-color: #FF8966; padding: 20px;">
-
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <div class="row">
-                <!-- Hobby 1 -->
-                <div class="col-md-4">
-                    <div class="card" style="background-color: #97EAD2;">
-                        <img src="hobby1.jpg" class="card-img-top" alt="Hobby 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Coding</h5>
-                            <p class="card-text">Why I love this hobby.</p>
-                        </div>
+            <a class="navbar-brand" href="../resources/img/Profile image.jpg"><img src="../resources/img/Profile image.jpg" alt="Personal img"></a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <h2 class="text-white">Interests</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="../resources/img/code_snippet.jpg" class="card-img-top" alt="Coding">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Coding</h5>
+                        <p class="card-text">I enjoy working on coding projects from a chess game to a swerve simulator. My most recent exploration has been into HTML, CSS, and web Javascript</p>
                     </div>
                 </div>
-                <!-- Hobby 2 -->
-                <div class="col-md-4">
-                    <div class="card" style="background-color: #97EAD2;">
-                        <img src="hobby2.jpg" class="card-img-top" alt="Hobby 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Gaming</h5>
-                            <p class="card-text">Why I love this hobby.</p>
-                        </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="../resources/img/car.JPEG" class="card-img-top" alt="Classic cars">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Classic cars</h5>
+                        <p class="card-text">I love looking at and working on classic cars. The above image is my 1979 pontiac firebird olds 403 ws6. It is a great oppourtunity to learn new things and have well rounded skills as a person, and there is always something to fix.</p>
                     </div>
                 </div>
-                <!-- Hobby 3 -->
-                <div class="col-md-4">
-                    <div class="card" style="background-color: #97EAD2;">
-                        <img src="hobby3.jpg" class="card-img-top" alt="Hobby 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Ultimate Frisbee</h5>
-                            <p class="card-text">Why I love this hobby.</p>
-                        </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="../resources/img/doom.jpg" class="card-img-top" alt="Gaming">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Gaming</h5>
+                        <p class="card-text">I find gaming is a great way to get invested in a brand new story, and gives you something to beat. I mostly lean towards single player games in the range from Doom Eternal to No Man's Sky, although I have been picking up some multiplayer titles more recently.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="../resources/img/refurboot-logo-1.png" class="card-img-top" alt="Refurbishing">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Refurbishing</h5>
+                        <p class="card-text">Working on computer hardware is one of my favorite things to do, I started refurbishing laptops around 2018 and have found it both interesting and profitable as a hobby ever since. You can find my website for that at https://refurboot.weebly.com/</p>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
-
-
-    <footer class="text-center mt-5">
-        <p>Connect with me:</p>
-        <a href="https://www.linkedin.com/in/graham-blocher-24951a1a4" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/Blocherge" target="_blank">GitHub</a> |
-        <a href="https://instagram/blocherge" target="_blank">Instagram</a>
-    </footer>
-
+    </div>
+    <div class="footer">
+        <a href="https://www.instagram.com/blocherge?igsh=MWRzNTU3aWV5dDE5Yw%3D%3D&utm_source=qr"><img src="../resources/img/instagram_icon.png" alt="Instagram"></a>
+        <a href="https://www.github.com/Blocherge"><img src="../resources/img/2021_Facebook_icon.svg.png" alt="Facebook"></a>
+        <a href="https://www.linkedin.com/in/graham-blocher-24951a1a4"><img src="../resources/img/github_icon.png" alt="GitHub"></a>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
